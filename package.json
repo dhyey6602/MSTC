@@ -1,0 +1,19 @@
+{
+  "name": "mstc",
+  "version": "1.0.0",
+  "description": "Portfolio for club website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhyey6602/MSTC.git"
+  },
+  "author": "Dhyey Gami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhyey6602/MSTC/issues"
+  },
+  "homepage": "https://github.com/dhyey6602/MSTC#readme"
+}
