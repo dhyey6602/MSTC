@@ -92,6 +92,14 @@ a{
     margin-bottom: 1rem;
     display: inline-block;
 }
+.gradient-heading{
+    background-image: linear-gradient(to right bottom,rgba(0, 128, 255, 0.85),rgba(8, 88, 238, 0.85));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    font-weight: 900;
+}
 .main__content-contact-heading:hover{
     transform: scale(1.1);
     text-shadow: 0 1rem 2rem rgba(155, 89, 89, 0.2);
