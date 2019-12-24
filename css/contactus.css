@@ -12,67 +12,6 @@ a{
     color: white;
 }
 
-.header{
-    width: 100%;
-    height:90vh;
-    background-image: linear-gradient(to right bottom,rgba(8, 88, 238, 0.85),rgba(0, 128, 255, 0.85),rgba(8, 88, 238, 0.85)),url(images/group.jpg);
-    background-size: cover;
-    background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    position: relative;
-}
-.header__logo{
-    height: 7rem;
-    width: auto;
-    z-index: 1;
-}
-.header__content{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    text-align: center;
-}
-.header__primary-heading{
-    font-size: 7rem;
-    letter-spacing: 0.2rem;
-    animation: move_left 1s;
-}
-.header__secondary-heading{
-    font-size: 3rem;
-    letter-spacing: 0.1rem;
-    animation: move_right 1s;
-}
-.header__navigation{
-    position: absolute;
-    top:1rem ;
-    right: 5%;
-}
-.header__nav-items li{
-    display: inline-block;
-    margin-right: 3rem;
-    color: white;
-    font-size: 1rem;
-    letter-spacing: .1rem;
-    transition:  1s;
-    padding-bottom: 0.5rem;
-    cursor: pointer;
-}
-
-.header__nav-items li::after {
-    content: '';
-    display: block;
-    width: 0;
-    margin-top: 0.5rem;
-    height: 2px;
-    background: #FFF;
-    transition: width .3s;
-}
-
-.header__nav-items li:hover::after {
-    width: 100%;
-}
 .mov-to-top{
     position: fixed;
     height: 2.5rem;
@@ -85,58 +24,82 @@ a{
     font-size: 1.5rem;
     text-align: center;
 }
-
-
-
-.main{
-    width: 60%;
-    margin: 5rem auto;
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-    text-align: justify;
+.header{
+    height: 40vh;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(to right bottom,rgba(8, 88, 238, 0.85),rgba(0, 128, 255, 0.85),rgba(8, 88, 238, 0.85)),linear-gradient(black,black);
+    clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
 }
-.center-text{
-    text-align: center;
+.header__logo{
+    height: 7rem;
+    width: auto;
+    z-index: 1;
 }
-.main__heading{
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+.header__navigation{
+    position: absolute;
+    top:1rem ;
+    right: 5%;
+}
+.header__navigation-item li{
     display: inline-block;
-    transition: all 0.5s;
+    margin-right: 3rem;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    transition:  1s;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
 }
-.gradient-heading{
+.header__navigation-item li::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin-top: 0.5rem;
+    height: 2px;
+    background: #FFF;
+    transition: width .3s;
+}
+
+.header__navigation li:hover::after {
+    width: 100%;
+}
+
+.header__content{
+    text-align: center;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    font-size: 3rem;
+    font-style: italic;
+    padding: 1rem;
+    animation: move_left 1s;
+}
+
+.main__content{
+    width: 60%;
+    margin: 2rem auto;
+}
+.main__content-contact-heading{
+    font-size: 2rem;
     background-image: linear-gradient(to right bottom,rgba(0, 128, 255, 0.85),rgba(8, 88, 238, 0.85));
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     font-weight: 900;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    margin: 3rem auto;
+    margin-bottom: 1rem;
+    display: inline-block;
 }
-.main__heading:hover{
+.main__content-contact-heading:hover{
     transform: scale(1.1);
     text-shadow: 0 1rem 2rem rgba(155, 89, 89, 0.2);
 }
-.main__button{
-    text-align: center;
-    margin: 3rem 0;
-    height: 3rem;
-}
-.main__nav-button{
-    padding:1rem 2rem;
-    color: white;
-    font-size: 0.8rem;
-    border: none;
-    border-radius: 2rem;
-    background-image: linear-gradient(to right bottom,rgba(0, 128, 255, 0.85),rgba(8, 88, 238, 0.85));
-    cursor: pointer;
-    transition: all 0.2s;
-    text-transform: uppercase;
-}
-.main__nav-button:hover{
-    transform: translateY(-0.2rem);
+.main__content-contact{
     font-size: 1rem;
-    box-shadow: 0 2rem 2rem rgba(155, 89, 89, 0.2);
+    line-height: 1.5;
+    margin-bottom: 5rem ;
 }
 
 .footer{
@@ -205,6 +168,8 @@ a{
     color: rgba(255,255,255,0.3);
     border-top: 1px solid white;
 }
+
+
 @keyframes move_left{
     0%{
         opacity: 0;
@@ -213,21 +178,6 @@ a{
     80%{
         opacity: 0.5;
         transform: translateX(2rem);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes move_right{
-    0%{
-        opacity: 0;
-        transform: translateX(5rem);
-    }
-    80%{
-        opacity: 0.5;
-        transform: translateX(-2rem);
     }
     100%{
         opacity: 1;
