@@ -235,7 +235,7 @@ a{
     }
     .footer__logo , .footer__contact-us ,.footer__social-icons{
         display: block;
-        margin: 2rem;
+        margin: 2rem 0;
         width: 100%;
         text-align: center;
     }
