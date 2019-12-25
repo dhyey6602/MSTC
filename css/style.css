@@ -5,12 +5,30 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 10px;
+    font-size: 62.5%;
 }
 a{
     text-decoration: none;
     color: white;
 }
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+    }
+}
+
 
 .header{
     width: 100%;
@@ -25,6 +43,7 @@ a{
     height: 7rem;
     width: auto;
     z-index: 1;
+    margin-left: 3rem;
 }
 .header__content{
     position: absolute;
@@ -84,6 +103,7 @@ a{
     border-radius: 5%;
     font-size: 1.5rem;
     text-align: center;
+    z-index: 2;
 }
 
 
@@ -95,6 +115,11 @@ a{
     color: #555;
     line-height: 1.5;
     text-align: justify;
+}
+@media (max-width: 75em) {
+    .main{
+    width:80%;
+}
 }
 .center-text{
     text-align: center;
@@ -130,7 +155,7 @@ a{
     border-radius: 2rem;
     background-image: linear-gradient(to right bottom,rgba(0, 128, 255, 0.85),rgba(8, 88, 238, 0.85));
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.1s;
     text-transform: uppercase;
 }
 .main__nav-button:hover{
@@ -138,17 +163,24 @@ a{
     font-size: 1rem;
     box-shadow: 0 2rem 2rem rgba(155, 89, 89, 0.2);
 }
-
+@media (min-width: 75rem){
+    .footer{
+        position: relative;
+    }
+    .footer__logo{
+        float: left;
+    }
+}
 .footer{
     background-color: #1a1a1a;
-    height: 20rem;
+    height: 22rem;
     color: white;
     padding-top: 2rem;
 }
-.footer_logo{
+.footer_logo-img{
     height: 10rem;
-    width: auto;
-    float: left;
+    margin: 0 5rem ;
+    display: inline-block;
 }
 .footer__social-icons{
     float: left;
@@ -187,13 +219,26 @@ a{
     transform: scale(1.5);
 }
 .footer__contact-us{
+    width: 33%;
+    display: inline-block;
     text-align: center;
     font-size: 1rem;
     letter-spacing: 0.1rem;
 }
 .footer__contact-us-heading{
-    padding: 2rem 0 1rem 0;
     font-size:2rem;
+    margin: 2rem 0 1rem 0;
+}
+@media (max-width: 75em) {
+    .footer{
+        height: 40rem;
+    }
+    .footer__logo , .footer__contact-us ,.footer__social-icons{
+        display: block;
+        margin: 2rem;
+        width: 100%;
+        text-align: center;
+    }
 }
 .footer__copyright{
     margin: 5rem auto 2rem auto;
