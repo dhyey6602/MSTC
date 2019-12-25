@@ -163,6 +163,8 @@ a{
     font-size: 1rem;
     box-shadow: 0 2rem 2rem rgba(155, 89, 89, 0.2);
 }
+
+
 @media (min-width: 75rem){
     .footer{
         position: relative;
