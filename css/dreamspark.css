@@ -5,12 +5,31 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 10px;
+    font-size: 62.5%;
 }
 a{
     text-decoration: none;
     color: white;
 }
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+    }
+}
+
+
 
 .header{
     width: 100%;
@@ -70,7 +89,7 @@ a{
 }
 .main__header{
     text-align: center;
-    margin: 10rem;
+    margin: 10rem 0;
 }
 .main__content{
     text-align: center;
@@ -78,9 +97,9 @@ a{
 }
 .main__content-img{
     animation: fadein 2s;
+    width: 80vw;
 }
 .main__content-about{
-    width: 60%;
     color: #555;
     font-size: 1rem;
     margin: 2rem auto;
@@ -107,16 +126,27 @@ a{
     text-shadow: 0 1rem 2rem rgba(155, 89, 89, 0.2);
 }
 
+@media (min-width: 75rem){
+    .footer{
+        position: relative;
+    }
+    .footer__logo{
+        float: left;
+    }
+    .main__content-about{
+        width: 60%;
+    }
+}
 .footer{
     background-color: #1a1a1a;
-    height: 20rem;
+    height: 22rem;
     color: white;
     padding-top: 2rem;
 }
-.footer_logo{
+.footer_logo-img{
     height: 10rem;
-    width: auto;
-    float: left;
+    margin: 0 5rem ;
+    display: inline-block;
 }
 .footer__social-icons{
     float: left;
@@ -155,13 +185,29 @@ a{
     transform: scale(1.5);
 }
 .footer__contact-us{
+    width: 33%;
+    display: inline-block;
     text-align: center;
     font-size: 1rem;
     letter-spacing: 0.1rem;
 }
 .footer__contact-us-heading{
-    padding: 2rem 0 1rem 0;
     font-size:2rem;
+    margin: 2rem 0 1rem 0;
+}
+@media (max-width: 75em) {
+    .footer{
+        height: 40rem;
+    }
+    .footer__logo , .footer__contact-us ,.footer__social-icons{
+        display: block;
+        margin: 2rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    .main__content-about{
+        width: 80%;
+    }
 }
 .footer__copyright{
     margin: 5rem auto 2rem auto;

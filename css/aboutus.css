@@ -42,7 +42,7 @@ a{
     text-align: center;
 }
 .header{
-    height: 45vh;
+    height: 40vh;
     width: 100%;
     color: white;
     background-image: linear-gradient(to right bottom,rgba(8, 88, 238, 0.85),rgba(0, 128, 255, 0.85),rgba(8, 88, 238, 0.85)),linear-gradient(black,black);
