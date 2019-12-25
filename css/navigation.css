@@ -55,7 +55,9 @@ a{
 }
 
 @media (max-width: 75em) {  
-    
+.header__logo{
+	padding: 1rem 2rem;
+}
 .header__navigation{
 	display: none;
 }
