@@ -128,10 +128,10 @@ a{
         font-weight: 900;
 }
 .main__content-card{
-    
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1) ;
     border-radius: 5px;
     font-size: 1.05rem;
+    margin-bottom: 5rem;
 }
 @media (min-width: 75rem){
     .main__content-card{
@@ -139,7 +139,7 @@ a{
         padding: 4rem;
         display: inline-block;
         height: 20rem;
-    width: 15rem;
+        width: 15rem;
     }
 }
 .main__content-card-name{
